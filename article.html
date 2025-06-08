@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,19 +20,19 @@
                         <nav class="header__menu">
                             <ul>
                                 <li>
-                                    <a href="#">Про нас</a>
+                                    <a href="about.html">Про нас</a>
                                 </li>
                                 <li>
-                                    <a href="#">Блог</a>
+                                    <a href="blog.html">Блог</a>
                                 </li>
                                 <li>
-                                    <a href="#">Доставка та оплата </a>
+                                    <a href="delivery.html">Доставка та оплата </a>
                                 </li>
                                 <li>
                                     <a href="#">Обмін та повернення</a>
                                 </li>
                                 <li>
-                                    <a href="#">Контакти</a>
+                                    <a href="contacts.html">Контакти</a>
                                 </li>
                             </ul>
                         </nav>
@@ -243,7 +242,7 @@
         <section class="article">
             <div class="container">
                 <div class="article__inner">
-                    <ul class="breadcrumbs article__breadcrumbs">
+                    <ul class="breadcrumbs">
                         <li>
                             <a href="index.html">Головна</a>
                         </li>
@@ -298,8 +297,8 @@
                             </div>
                         </div>
                         <div class="article__bottom">
-                            <a class="article__bottom-prev" href="#">Чи є протипоказання для використання масажера?</a>
-                            <a class="article__bottom-next" href="#">Масажна роликова подушка <br>ZM-P002</a>
+                            <a class="article__bottom-prev btn-prev" href="#">Чи є протипоказання для використання масажера?</a>
+                            <a class="article__bottom-next btn-next" href="#">Масажна роликова подушка <br>ZM-P002</a>
                         </div>
                     </div>
                 </div>
@@ -367,7 +366,7 @@
                     <div class="cart__products-block">
                         <div class="cart__products-item">
                             <a class="cart__products-image" href="#">
-                                <img src="img/product/7.png" alt="">
+                                <img src="img/cart/1.png" alt="">
                             </a>
                             <div class="cart__products-content">
                                 <a class="cart__products-name" href="#">
@@ -390,7 +389,7 @@
                     <div class="cart__recommend-bock">
                         <div class="cart__recommend-item">
                             <a class="cart__recommend-image" href="#">
-                                <img src="img/product/5.png" alt="">
+                                <img src="img/cart/2.png" alt="">
                             </a>
                             <a class="cart__recommend-name" href="#">
                                 <h3>Чохол для масажера Zabobon Shiatsu</h3>
@@ -419,76 +418,7 @@
                     </div>
                     <div class="cart__bottom-buttons">
                         <button class="cart__bottom-close btn-2">Повернутись до покупок</button>
-                        <a class="cart__bottom-order btn" href="#">Оформити замовлення</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cart">
-            <div class="cart__inner">
-                <div class="cart__top">
-                    <h2 class="cart__title">В кошику <span>(1)</span> товари</h2>
-                    <button class="cart__close"></button>
-                </div>
-                <div class="cart__products">
-                    <h3 class="cart__products-title">Список товарів</h3>
-                    <div class="cart__products-block">
-                        <div class="cart__products-item">
-                            <a class="cart__products-image" href="#">
-                                <img src="img/product/7.png" alt="">
-                            </a>
-                            <div class="cart__products-content">
-                                <a class="cart__products-name" href="#">
-                                    <h3>Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
-                                </a>
-                                <p class="cart__products-aticle">Артикул: <span>FTXP35</span></p>
-                                <p class="cart__products-price">1 400 грн. <span>1 900 грн.</span></p>
-                                <div class="cart__products-count">
-                                    <button class="cart__products-minus"></button>
-                                    <input class="cart__products-num" type="text" value="1" name="number" readonly>
-                                    <button class="cart__products-plus"></button>
-                                </div>
-                                <button class="cart__products-delete"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart__recommend">
-                    <h3 class="cart__recommend-title">Наші рекомендації</h3>
-                    <div class="cart__recommend-bock">
-                        <div class="cart__recommend-item">
-                            <a class="cart__recommend-image" href="#">
-                                <img src="img/product/5.png" alt="">
-                            </a>
-                            <a class="cart__recommend-name" href="#">
-                                <h3>Чохол для масажера Zabobon Shiatsu</h3>
-                            </a>
-                            <p class="cart__recommend-price">699 грн. <span>899 грн.</span></p>
-                            <button class="cart__recommend-buy btn">Купити</button>
-                        </div>
-                    </div>
-                </div>
-                <form class="cart__promo" action="#">
-                    <input class="cart__promo-input" type="text" placeholder="Введіть промокод" name="promo" required>
-                    <button class="cart__promo-btn btn-3">Застосувати</button>
-                </form>
-                <div class="cart__bottom">
-                    <div class="cart__bottom-block">
-                        <p class="cart__bottom-descr">Знижка</p>
-                        <p class="cart__bottom-descr">500 грн</p>
-                    </div>
-                    <div class="cart__bottom-block">
-                        <p class="cart__bottom-descr">До сплати</p>
-                        <p class="cart__bottom-descr">1 400 грн</p>
-                    </div>
-                    <div class="cart__bottom-total">
-                        <p class="cart__bottom-descr">Всього:</p>
-                        <p class="cart__bottom-descr">1 900 грн</p>
-                    </div>
-                    <div class="cart__bottom-buttons">
-                        <button class="cart__bottom-close btn-2">Повернутись до покупок</button>
-                        <a class="cart__bottom-order btn" href="#">Оформити замовлення</a>
+                        <a class="cart__bottom-order btn" href="order.html">Оформити замовлення</a>
                     </div>
                 </div>
             </div>
@@ -645,7 +575,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 

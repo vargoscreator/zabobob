@@ -43,10 +43,14 @@ checkHeaderScroll()
 window.addEventListener("scroll", checkHeaderScroll);
 window.addEventListener("resize", checkHeaderScroll);
 
-document.querySelectorAll('.header__catalog-open, .header__bg').forEach(button => {
+document.querySelectorAll('.header__catalog-open').forEach(button => {
   button.addEventListener('click', () => {
     document.querySelector('header').classList.toggle('show-catalog');
   });
+});
+document.querySelector('.header__bg').addEventListener('click', () => {
+  document.querySelector('header').classList.remove('show-catalog');
+      document.querySelector('header').classList.remove('header-menu-opened');
 });
 document.querySelector(".header__burger").addEventListener("click", function () {
   document.querySelector(".header").classList.toggle("header-menu-opened");
@@ -82,9 +86,6 @@ function moveHeaderElements() {
 }
 moveHeaderElements();
 window.addEventListener("resize", moveHeaderElements);
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const headerBasket = document.querySelector('.header__busket');
     if(document.querySelector('.cart')){
@@ -104,77 +105,92 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    if(document.querySelectorAll('.reviews__slider')){
+      let reviewsSwiper = new Swiper(".reviews__slider", {
+            loop: true,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".reviews__next",
+                prevEl: ".reviews__prev",
+            },
+            pagination:{
+                el: '.reviews__slider-pagination'
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 30,
+                    slidesPerView: 2,
+                },
+                1280: {
+                    spaceBetween: 25,
+                    slidesPerView: 3,
+                },
+            },
+        });
+    }
+
+    if(document.querySelectorAll('.productSlider__slider')){
+      let productSliderSwiper = new Swiper(".productSlider__slider", {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 2,
+      navigation: {
+          nextEl: ".productSlider__next",
+          prevEl: ".productSlider__prev",
+      },
+      pagination:{
+          el: '.productSlider__pagination'
+      },
+      breakpoints: {
+          1000: {
+              slidesPerView: 3,
+          },
+          1280: {
+              spaceBetween: 24,
+              slidesPerView: 4,
+          },
+      },
+    });
+    }
+    
+
+    document.querySelectorAll('.popupOrder__form-input').forEach(input => {
+      input.addEventListener('input', () => {
+        input.classList.toggle('not-empty', input.value.trim() !== '');
+      });
+    });
+
+    document.querySelectorAll('.faq__item-title').forEach(title => {
+      title.addEventListener('click', function() {
+        const item = this.parentElement;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq__item').forEach(el => el.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
 });
-
-
-document.querySelectorAll('.popupOrder__form-input').forEach(input => {
-  input.addEventListener('input', () => {
-    input.classList.toggle('not-empty', input.value.trim() !== '');
-  });
-});
-
+    
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const stars = document.querySelectorAll('.reviewsPopup__form-stars label');
-    const ratingInput = document.querySelector('.reviewsPopup__form-stars input[name="star"]');
-    let currentRating = 1;
-    ratingInput.value = currentRating;
-    updateStarColors(currentRating);
-
-    stars.forEach((star, index) => {
-        star.addEventListener('click', () => {
-            currentRating = index + 1;
-            ratingInput.value = currentRating;
-            updateStarColors(currentRating);
-        });
-        star.addEventListener('mouseover', () => {
-            updateStarColors(index + 1);
-        });
-        star.addEventListener('mouseout', () => {
-            updateStarColors(currentRating);
-        });
-    });
-
-    function updateStarColors(rating) {
-        stars.forEach((star, index) => {
-            const path = star.querySelector('svg path');
-            if (index < rating) {
-                path.setAttribute('fill', '#31BBDC');
-            } else {
-                path.setAttribute('fill', '#0F181E');
-            }
-        });
-    }
-
-    const fileInput = document.querySelector('.reviewsPopup__form-file input[type="file"]');
-    const fileLabel = document.querySelector('.reviewsPopup__form-file label');
-    const fileContent = document.querySelector('.reviewsPopup__form-file--content');
-
-    fileInput.addEventListener('change', (event) => {
-        const file = event.target.files[0];
-        if (file && file.type.startsWith('image/')) {
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                fileLabel.classList.add('hide');
-                const item = document.createElement('div');
-                item.className = 'reviewsPopup__form-file--item';
-                const img = document.createElement('img');
-                img.src = e.target.result;
-                img.alt = '';
-                const closeButton = document.createElement('button');
-                item.appendChild(img);
-                item.appendChild(closeButton);
-                fileContent.innerHTML = '';
-                fileContent.appendChild(item);
-                closeButton.addEventListener('click', () => {
-                    fileContent.innerHTML = '';
-                    fileInput.value = '';
-                    fileLabel.classList.remove('hide');
-                });
-            };
-            reader.readAsDataURL(file);
-        }
-    });
+    if(document.querySelector('.popupOrder')){
+      const popupOrder = document.querySelector('.popupOrder');
+      const popupOrderInner = document.querySelector('.popupOrder__inner');
+      const popupOrderClose = document.querySelector('.popupOrder__close');
+      const popupOrderOpen = document.querySelector('.popupOrder-open');
+      popupOrderOpen.addEventListener('click', () => {
+          popupOrder.classList.add('active');
+      });
+      function closePopup(event) {
+          if (event.target === popupOrderClose || !popupOrderInner.contains(event.target)) {
+              popupOrder.classList.remove('active');
+          }
+      }
+      popupOrderClose.addEventListener('click', closePopup);
+      popupOrder.addEventListener('click', closePopup);
+    }    
 });
