@@ -1,3 +1,9 @@
+if (typeof AOS !== 'undefined') {
+  AOS.init({
+    once: true,
+    duration: 800
+  });
+}
 document.addEventListener('DOMContentLoaded', function () {
     const messageBlockMoreBtn = document.querySelector('.messageBlock__more');
     messageBlockMoreBtn?.addEventListener('click', function () {
@@ -105,52 +111,94 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    if(document.querySelectorAll('.reviews__slider')){
-      let reviewsSwiper = new Swiper(".reviews__slider", {
-            loop: true,
-            spaceBetween: 20,
-            slidesPerView: 1,
-            navigation: {
-                nextEl: ".reviews__next",
-                prevEl: ".reviews__prev",
-            },
-            pagination:{
-                el: '.reviews__slider-pagination'
-            },
-            breakpoints: {
-                768: {
-                    spaceBetween: 30,
-                    slidesPerView: 2,
-                },
-                1280: {
-                    spaceBetween: 25,
-                    slidesPerView: 3,
-                },
-            },
-        });
-    }
 
-    if(document.querySelectorAll('.productSlider__slider')){
-      let productSliderSwiper = new Swiper(".productSlider__slider", {
-      loop: true,
-      spaceBetween: 20,
-      slidesPerView: 2,
-      navigation: {
-          nextEl: ".productSlider__next",
-          prevEl: ".productSlider__prev",
-      },
-      pagination:{
-          el: '.productSlider__pagination'
-      },
-      breakpoints: {
-          1000: {
-              slidesPerView: 3,
+    if(typeof Swiper !== 'undefined' && document.querySelectorAll('.reviews__slider')){
+        const siteButtons = document.querySelectorAll(".reviews__sites-item");
+    const sliders = document.querySelectorAll(".reviews__slider");
+    const paginations = document.querySelectorAll(".reviews__slider-pagination");
+
+    const swiperInstances = {};
+
+    sliders.forEach((slider, index) => {
+      const id = slider.getAttribute("id");
+      const pagination = paginations[index];
+
+      swiperInstances[id] = new Swiper(`#${id}`, {
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".reviews__next",
+          prevEl: ".reviews__prev",
+        },
+        pagination: {
+          el: pagination,
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            spaceBetween: 30,
+            slidesPerView: 2,
           },
           1280: {
-              spaceBetween: 24,
-              slidesPerView: 4,
+            spaceBetween: 25,
+            slidesPerView: 3,
           },
-      },
+        },
+      });
+    });
+
+    function activateSlider(targetId) {
+      sliders.forEach(slider => slider.classList.remove("active"));
+      siteButtons.forEach(btn => btn.classList.remove("active"));
+      paginations.forEach(pag => pag.classList.remove("active"));
+
+      const targetSlider = document.getElementById(targetId);
+      const targetSwiper = swiperInstances[targetId];
+
+      if (targetSlider && targetSwiper) {
+        targetSlider.classList.add("active");
+        document.querySelector(`[data-review-select="${targetId}"]`).classList.add("active");
+        const targetIndex = Array.from(sliders).findIndex(sl => sl.id === targetId);
+        if (paginations[targetIndex]) {
+          paginations[targetIndex].classList.add("active");
+        }
+        targetSwiper.update();
+      }
+    }
+    siteButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-review-select");
+        activateSlider(targetId);
+      });
+    });
+    const defaultBtn = document.querySelector(".reviews__sites-item.active");
+    if (defaultBtn) {
+      activateSlider(defaultBtn.getAttribute("data-review-select"));
+    }
+    }
+
+    if(typeof Swiper !== 'undefined' && document.querySelectorAll('.productSlider__slider')){
+      let productSliderSwiper = new Swiper(".productSlider__slider", {
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 2,
+        navigation: {
+            nextEl: ".productSlider__next",
+            prevEl: ".productSlider__prev",
+        },
+        pagination:{
+            el: '.productSlider__pagination'
+        },
+        breakpoints: {
+            1000: {
+                slidesPerView: 3,
+            },
+            1280: {
+                spaceBetween: 24,
+                slidesPerView: 4,
+            },
+        },
     });
     }
     
@@ -171,12 +219,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
-});
-    
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
     if(document.querySelector('.popupOrder')){
       const popupOrder = document.querySelector('.popupOrder');
       const popupOrderInner = document.querySelector('.popupOrder__inner');
@@ -193,4 +237,44 @@ document.addEventListener('DOMContentLoaded', () => {
       popupOrderClose.addEventListener('click', closePopup);
       popupOrder.addEventListener('click', closePopup);
     }    
+
+
+    if (window.gsap && window.ScrollTrigger) {
+      gsap.registerPlugin(ScrollTrigger);
+      const animateItems = document.querySelectorAll('.hits__block .product__item, .blogs__item');
+      gsap.set(animateItems, { opacity: 0, y: 50 });
+      ScrollTrigger.batch(animateItems, {
+          start: "top 80%",
+          onEnter: batch => {
+          gsap.to(batch, {
+              opacity: 1,
+              y: 0,
+              stagger: 0.2,
+              duration: 0.8,
+              ease: "power3.out",
+              overwrite: true
+          });
+          },
+          once: true
+      });
+      const worksItems = gsap.utils.toArray(".categories__box");
+      if (window.innerWidth >= 768) {
+          worksItems.slice(0, -1).forEach((item) => {
+              let height = item.querySelector('.categories__title').scrollHeight + 140 + "px";
+              gsap.to(item, {
+                  height: height,
+                  ease: "none",
+                  scrollTrigger: {
+                      trigger: item,
+                      start: "top 70px",
+                      end: `+=100% +=${height}`,
+                      scrub: true,
+                      pin: true,
+                      pinSpacing: false,
+                      onLeave: () => gsap.set(item, { height: height })
+                  }
+              });
+          });
+      }
+    }
 });

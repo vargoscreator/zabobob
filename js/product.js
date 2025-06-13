@@ -112,4 +112,20 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.productAbout__slider-prev',
         },
     });
+    const tabButtons = document.querySelectorAll('.reviewProduct__info-item');
+    const tabContents = document.querySelectorAll('.reviewProduct__left-content');
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const target = button.dataset.reviewSelect;
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            tabContents.forEach(content => {
+                if (content.dataset.reviewContent === target) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        });
+    });
 });

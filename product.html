@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -64,13 +65,13 @@
                             </div>
                             <div class="header__user">
                                 <button class="header__search">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                        <path d="M11.9375 13.0419C10.6627 14.0687 9.07442 14.6275 7.4375 14.625C3.46813 14.625 0.25 11.4069 0.25 7.4375C0.25 3.46813 3.46813 0.25 7.4375 0.25C11.4069 0.25 14.625 3.46813 14.625 7.4375C14.625 9.14062 14.0325 10.7056 13.0425 11.9375L16.8969 15.7912C17.0434 15.9378 17.1257 16.1365 17.1257 16.3438C17.1257 16.551 17.0434 16.7497 16.8969 16.8962C16.7503 17.0428 16.5516 17.1251 16.3444 17.1251C16.1371 17.1251 15.9384 17.0428 15.7919 16.8962L11.9375 13.0419ZM13.0625 7.4375C13.0625 5.94566 12.4699 4.51492 11.415 3.46002C10.3601 2.40513 8.92934 1.8125 7.4375 1.8125C5.94566 1.8125 4.51492 2.40513 3.46002 3.46002C2.40513 4.51492 1.8125 5.94566 1.8125 7.4375C1.8125 8.92934 2.40513 10.3601 3.46002 11.415C4.51492 12.4699 5.94566 13.0625 7.4375 13.0625C8.92934 13.0625 10.3601 12.4699 11.415 11.415C12.4699 10.3601 13.0625 8.92934 13.0625 7.4375Z" fill="#BFBFBF"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                        <path d="M16.8715 18.1928C15.0586 19.6531 12.7998 20.4479 10.4718 20.4443C4.82671 20.4443 0.25 15.8675 0.25 10.2222C0.25 4.57687 4.82671 0 10.4718 0C16.1169 0 20.6936 4.57687 20.6936 10.2222C20.6936 12.6444 19.851 14.8701 18.443 16.6221L23.9246 22.1029C24.133 22.3114 24.25 22.594 24.25 22.8888C24.25 23.1835 24.133 23.4661 23.9246 23.6745C23.7161 23.883 23.4335 24 23.1389 24C22.8441 24 22.5615 23.883 22.3531 23.6745L16.8715 18.1928ZM18.4715 10.2222C18.4715 8.10045 17.6287 6.06563 16.1285 4.56534C14.6282 3.06506 12.5934 2.22221 10.4718 2.22221C8.35016 2.22221 6.31541 3.06506 4.81517 4.56534C3.31495 6.06563 2.47213 8.10045 2.47213 10.2222C2.47213 12.3439 3.31495 14.3787 4.81517 15.879C6.31541 17.3793 8.35016 18.2221 10.4718 18.2221C12.5934 18.2221 14.6282 17.3793 16.1285 15.879C17.6287 14.3787 18.4715 12.3439 18.4715 10.2222Z" fill="#BFBFBF"/>
                                     </svg>
                                 </button>
                                 <button class="header__busket">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.875 5H13.75C13.75 4.00544 13.3549 3.05161 12.6517 2.34835C11.9484 1.64509 10.9946 1.25 10 1.25C9.00544 1.25 8.05161 1.64509 7.34835 2.34835C6.64509 3.05161 6.25 4.00544 6.25 5H3.125C2.79348 5 2.47554 5.1317 2.24112 5.36612C2.0067 5.60054 1.875 5.91848 1.875 6.25V15.625C1.875 15.9565 2.0067 16.2745 2.24112 16.5089C2.47554 16.7433 2.79348 16.875 3.125 16.875H16.875C17.2065 16.875 17.5245 16.7433 17.7589 16.5089C17.9933 16.2745 18.125 15.9565 18.125 15.625V6.25C18.125 5.91848 17.9933 5.60054 17.7589 5.36612C17.5245 5.1317 17.2065 5 16.875 5ZM10 2.5C10.663 2.5 11.2989 2.76339 11.7678 3.23223C12.2366 3.70107 12.5 4.33696 12.5 5H7.5C7.5 4.33696 7.76339 3.70107 8.23223 3.23223C8.70107 2.76339 9.33696 2.5 10 2.5ZM16.875 15.625H3.125V6.25H6.25V7.5C6.25 7.66576 6.31585 7.82473 6.43306 7.94194C6.55027 8.05915 6.70924 8.125 6.875 8.125C7.04076 8.125 7.19973 8.05915 7.31694 7.94194C7.43415 7.82473 7.5 7.66576 7.5 7.5V6.25H12.5V7.5C12.5 7.66576 12.5658 7.82473 12.6831 7.94194C12.8003 8.05915 12.9592 8.125 13.125 8.125C13.2908 8.125 13.4497 8.05915 13.5669 7.94194C13.6842 7.82473 13.75 7.66576 13.75 7.5V6.25H16.875V15.625Z" fill="white"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                                        <path d="M22.9038 5.52H18.2885C18.2885 4.05601 17.7049 2.65197 16.6664 1.61677C15.6276 0.581573 14.2189 0 12.75 0C11.2811 0 9.87238 0.581573 8.83372 1.61677C7.79506 2.65197 7.21154 4.05601 7.21154 5.52H2.59615C2.10652 5.52 1.63695 5.71386 1.29073 6.05893C0.944511 6.40399 0.75 6.872 0.75 7.36V21.16C0.75 21.648 0.944511 22.1161 1.29073 22.4611C1.63695 22.8061 2.10652 23 2.59615 23H22.9038C23.3934 23 23.8631 22.8061 24.2093 22.4611C24.5555 22.1161 24.75 21.648 24.75 21.16V7.36C24.75 6.872 24.5555 6.40399 24.2093 6.05893C23.8631 5.71386 23.3934 5.52 22.9038 5.52ZM12.75 1.84C13.7292 1.84 14.6684 2.22771 15.3609 2.91784C16.0533 3.60797 16.4423 4.54401 16.4423 5.52H9.05769C9.05769 4.54401 9.4467 3.60797 10.1391 2.91784C10.8316 2.22771 11.7707 1.84 12.75 1.84ZM22.9038 21.16H2.59615V7.36H7.21154V9.2C7.21154 9.444 7.30879 9.678 7.4819 9.85054C7.65501 10.0231 7.8898 10.12 8.13462 10.12C8.37943 10.12 8.61422 10.0231 8.78733 9.85054C8.96044 9.678 9.05769 9.444 9.05769 9.2V7.36H16.4423V9.2C16.4423 9.444 16.5395 9.678 16.7127 9.85054C16.8858 10.0231 17.1205 10.12 17.3654 10.12C17.6103 10.12 17.8449 10.0231 18.018 9.85054C18.1913 9.678 18.2885 9.444 18.2885 9.2V7.36H22.9038V21.16Z" fill="#BFBFBF"/>
                                     </svg>
                                     <span>0</span>
                                 </button>
@@ -258,7 +259,7 @@
                         </li>
                     </ul>
                     <div class="product__content">
-                        <div class="product__left">
+                        <div class="product__left" data-aos="fade-up" data-aos-delay="0">
                             <div class="product__left-top">
                                 <button class="product__slider-prev btn-prev"></button>
                                 <div class="product__slider">
@@ -302,7 +303,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product__info">
+                        <div class="product__info" data-aos="fade-up" data-aos-delay="100">
                             <h1 class="product__title title-2">Масажна роликова подушка Zabobon ZM-P002</h1>
                             <div class="product__about">
                                 <p class="product__about-stock" data-stock="yes"></p>
@@ -377,7 +378,7 @@
             <div class="container">
                 <div class="whywe__inner">
                     <div class="whywe__block">
-                        <div class="whywe__item">
+                        <div class="whywe__item" data-aos="fade-up" data-aos-delay="0">
                             <div class="whywe__item-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none">
                                     <g clip-path="url(#clip0_6_8476)">
@@ -395,7 +396,7 @@
                             </div>
                             <h4 class="whywe__item-descr">Безкоштовна доставка при покупці двох масажерів</h4>
                         </div>
-                        <div class="whywe__item">
+                        <div class="whywe__item" data-aos="fade-up" data-aos-delay="100">
                             <div class="whywe__item-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none">
                                     <g clip-path="url(#clip0_6_8476)">
@@ -413,7 +414,7 @@
                             </div>
                             <h4 class="whywe__item-descr">Онлайн оплата <br>карткою на сайті</h4>
                         </div>
-                        <div class="whywe__item">
+                        <div class="whywe__item" data-aos="fade-up" data-aos-delay="200">
                             <div class="whywe__item-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none">
                                     <g clip-path="url(#clip0_6_8476)">
@@ -431,7 +432,7 @@
                             </div>
                             <h4 class="whywe__item-descr">Відправлення <br>накладним платежем</h4>
                         </div>
-                        <div class="whywe__item">
+                        <div class="whywe__item" data-aos="fade-up" data-aos-delay="300">
                             <div class="whywe__item-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none">
                                     <g clip-path="url(#clip0_6_8476)">
@@ -458,7 +459,7 @@
             <span id="productAbout"></span>
             <div class="container">
                 <div class="productAbout__inner">
-                    <div class="productAbout__content">
+                    <div class="productAbout__content" data-aos="fade-right" data-aos-delay="0">
                         <h2 class="productAbout__title title-3">Основі характеристики</h2>
                         <div class="productAbout__block">
                             <p class="productAbout__block-descr">Потужність <span>1500-2000 Вт</span></p>
@@ -468,7 +469,7 @@
                         </div>
                         <a class="productAbout__instruction btn-2" href="#">Інструкція</a>
                     </div>
-                    <div class="productAbout__image">
+                    <div class="productAbout__image" data-aos="fade-left" data-aos-delay="100">
                         <img src="img/productAbout/1.png" alt="">
                     </div>
                 </div>
@@ -478,12 +479,12 @@
         <section class="productAbout productAbout-reverse">
             <div class="container">
                 <div class="productAbout__inner">
-                    <div class="productAbout__content">
+                    <div class="productAbout__content" data-aos="fade-left" data-aos-delay="100">
                         <h2 class="productAbout__title title-3">Додаткові <br>переваги</h2>
                         <p class="productAbout__descr">Комбінація ритму масажу та інтенсивності інфрачервоного тепла: Забезпечує не лише приємний масаж, але й додатковий тепловий ефект, що сприяє розслабленню м'язів і поліпшенню кровообігу.</p>
                         <p class="productAbout__descr">Ефективний масаж стоп для профілактики хвороб: Регулярний розминаючий масаж сприяє запобіганню натоптишів, шипів, п'яткових шпор, варикозу, та інших захворювань, пов'язаних зі станом стоп.</p>
                     </div>
-                    <div class="productAbout__image">
+                    <div class="productAbout__image" data-aos="fade-right" data-aos-delay="0">
                         <img src="img/productAbout/2.png" alt="">
                     </div>
                 </div>
@@ -492,7 +493,7 @@
 
         <section class="productAbout productAbout-center">
             <div class="container">
-                <div class="productAbout__inner">
+                <div class="productAbout__inner" data-aos="fade-right" data-aos-delay="0">
                     <div class="productAbout__content productAbout__content-center">
                         <h2 class="productAbout__title title-3">Коплектація</h2>
                         <ul class="productAbout__list icon-list">
@@ -501,7 +502,7 @@
                             <li>Інструкція</li>
                         </ul>
                     </div>
-                    <div class="productAbout__slider-content">
+                    <div class="productAbout__slider-content" data-aos="fade-left" data-aos-delay="100">
                         <button class="productAbout__slider-prev btn-prev"></button>
                         <button class="productAbout__slider-next btn-next"></button>
                         <div class="productAbout__slider">
@@ -530,8 +531,8 @@
                     <div class="textBlock__bg">
                         <img src="img/textBlock.png" alt="">
                     </div>
-                    <h2 class="textBlock__title title-3">Масажна подушка: <br>ваша відповідь на <br>стрес та втому</h2>
-                    <p class="textBlock__descr">При тривалому перебуванні за кермом або при сидячій роботі м'язи можуть зазнавати атрофії, стаючи менш пружними та схильними до затиску. Особливо велика напруга відчутна у шиї та попереку. Даний виріб має спеціальну анатомічну форму та гнучкість, які сприяють благотворному впливу на ключові точки на шиї та спині.</p>
+                    <h2 class="textBlock__title title-3" data-aos="fade-up" data-aos-delay="0">Масажна подушка: <br>ваша відповідь на <br>стрес та втому</h2>
+                    <p class="textBlock__descr" data-aos="fade-up" data-aos-delay="100">При тривалому перебуванні за кермом або при сидячій роботі м'язи можуть зазнавати атрофії, стаючи менш пружними та схильними до затиску. Особливо велика напруга відчутна у шиї та попереку. Даний виріб має спеціальну анатомічну форму та гнучкість, які сприяють благотворному впливу на ключові точки на шиї та спині.</p>
                 </div>
             </div>
         </section>
@@ -539,13 +540,13 @@
         <section class="videoBlock">
             <div class="container">
                 <div class="videoBlock__inner">
-                    <div class="videoBlock__video">
+                    <div class="videoBlock__video" data-aos="fade-right" data-aos-delay="0">
                         <button class="videoBlock__video-start"></button>
                         <video playsinline>
                             <source src="video.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="videoBlock__content">
+                    <div class="videoBlock__content" data-aos="fade-left" data-aos-delay="100">
                         <h2 class="videoBlock__title title-3">Додаткові переваги</h2>
                         <p class="videoBlock__descr">Комбінація ритму масажу та інтенсивності інфрачервоного тепла</p>
                     </div>
@@ -556,159 +557,496 @@
         <section class="reviewProduct" id="reviewProduct">
             <div class="container">
                 <div class="reviewProduct__inner">
-                    <h2 class="reviewProduct__title title-3">Відгуки наших клієнтів про Масажна роликова подушка Zabobon ZM-P002</h2>
-                    <div class="reviewProduct__info">
+                    <h2 class="reviewProduct__title title-3" data-aos="fade-up" data-aos-delay="0">Відгуки наших клієнтів про Масажна роликова подушка Zabobon ZM-P002</h2>
+                    <div class="reviewProduct__info" data-aos="fade-up" data-aos-delay="100">
                         <div class="reviewProduct__info-block">
-                            <div class="reviewProduct__info-item active">
+                            <button class="reviewProduct__info-item active" data-review-select="zabobon">
                                 <img src="img/reviews/sites/1.png" alt="">
-                            </div>
-                            <div class="reviewProduct__info-item">
+                            </button>
+                            <button class="reviewProduct__info-item" data-review-select="rozetka">
                                 <img src="img/reviews/sites/2.svg" alt="">
-                            </div>
-                            <div class="reviewProduct__info-item">
+                            </button>
+                            <button class="reviewProduct__info-item" data-review-select="prom">
                                 <img src="img/reviews/sites/3.png" alt="">
-                            </div>
-                            <div class="reviewProduct__info-item">
+                            </button>
+                            <button class="reviewProduct__info-item" data-review-select="google">
                                 <img src="img/reviews/sites/4.svg" alt="">
-                            </div>
+                            </button>
                         </div>
                         <button class="reviewProduct__info-add reviewsPopup-open btn">Написати відгук</button>
                     </div>
                     <div class="reviewProduct__content">
-                        <div class="reviewProduct__left">
-                            <div class="reviewProduct__block">
-                                <div class="reviewProduct__item reviews__slide">
-                                    <div class="reviews__slide-top">
-                                        <div class="reviews__slide-image">
-                                            <img src="img/reviews/1.png" alt="">
-                                        </div>
-                                        <div class="reviews__slide-product">
-                                            <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
-                                            <div class="reviews__slide-stars">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
+                        <div class="reviewProduct__left" data-aos="fade-up" data-aos-delay="200">
+                            <div class="reviewProduct__left-content active" data-review-content="zabobon">
+                                <div class="reviewProduct__block">
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
                                             </div>
-                                            <div class="reviews__slide-about">
-                                                <p class="reviews__slide-date">22.03.2024</p>
-                                                <h5 class="reviews__slide-name">Катерина</h5>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
                                             </div>
                                         </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
                                     </div>
-                                    <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
-                                </div>
-                                <div class="reviewProduct__item reviews__slide">
-                                    <div class="reviews__slide-top">
-                                        <div class="reviews__slide-image">
-                                            <img src="img/reviews/1.png" alt="">
-                                        </div>
-                                        <div class="reviews__slide-product">
-                                            <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
-                                            <div class="reviews__slide-stars">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
                                             </div>
-                                            <div class="reviews__slide-about">
-                                                <p class="reviews__slide-date">22.03.2024</p>
-                                                <h5 class="reviews__slide-name">Катерина</h5>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
                                             </div>
                                         </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
                                     </div>
-                                    <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
-                                </div>
-                                <div class="reviewProduct__item reviews__slide">
-                                    <div class="reviews__slide-top">
-                                        <div class="reviews__slide-image">
-                                            <img src="img/reviews/1.png" alt="">
-                                        </div>
-                                        <div class="reviews__slide-product">
-                                            <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
-                                            <div class="reviews__slide-stars">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
                                             </div>
-                                            <div class="reviews__slide-about">
-                                                <p class="reviews__slide-date">22.03.2024</p>
-                                                <h5 class="reviews__slide-name">Катерина</h5>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
                                             </div>
                                         </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
                                     </div>
-                                    <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
-                                </div>
-                                <div class="reviewProduct__item reviews__slide">
-                                    <div class="reviews__slide-top">
-                                        <div class="reviews__slide-image">
-                                            <img src="img/reviews/1.png" alt="">
-                                        </div>
-                                        <div class="reviews__slide-product">
-                                            <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
-                                            <div class="reviews__slide-stars">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                                                    <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
-                                                </svg>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
                                             </div>
-                                            <div class="reviews__slide-about">
-                                                <p class="reviews__slide-date">22.03.2024</p>
-                                                <h5 class="reviews__slide-name">Катерина</h5>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
                                             </div>
                                         </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
                                     </div>
-                                    <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
                                 </div>
+                                <button class="reviewProduct__more btn-2">Завантажити ще</button>
                             </div>
-                            <button class="reviewProduct__more btn-2">Завантажити ще</button>
+                            <div class="reviewProduct__left-content" data-review-content="rozetka">
+                                <div class="reviewProduct__block">
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                </div>
+                                <button class="reviewProduct__more btn-2">Завантажити ще</button>
+                            </div>
+                            <div class="reviewProduct__left-content" data-review-content="prom">
+                                <div class="reviewProduct__block">
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                </div>
+                                <button class="reviewProduct__more btn-2">Завантажити ще</button>
+                            </div>
+                            <div class="reviewProduct__left-content" data-review-content="google">
+                                <div class="reviewProduct__block">
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                    <div class="reviewProduct__item reviews__slide">
+                                        <div class="reviews__slide-top">
+                                            <div class="reviews__slide-image">
+                                                <img src="img/reviews/1.png" alt="">
+                                            </div>
+                                            <div class="reviews__slide-product">
+                                                <h3 class="reviews__slide-title">Масажер для шиї та всього тіла Zabobon Shiatsu</h3>
+                                                <div class="reviews__slide-stars">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                                        <path d="M7.5 0L10.145 3.85942L14.6329 5.18237L11.7798 8.89058L11.9084 13.5676L7.5 12L3.09161 13.5676L3.22025 8.89058L0.367076 5.18237L4.85497 3.85942L7.5 0Z" fill="#31BBDC"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="reviews__slide-about">
+                                                    <p class="reviews__slide-date">22.03.2024</p>
+                                                    <h5 class="reviews__slide-name">Катерина</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="reviews__slide-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et nisi turpis. Nunc in arcu eu risus sollicitudin mattis. Nulla facilisi. Sed id elementum nulla...</p>
+                                    </div>
+                                </div>
+                                <button class="reviewProduct__more btn-2">Завантажити ще</button>
+                            </div>
                         </div>
-                        <div class="reviewProduct__rating">
+                        <div class="reviewProduct__rating" data-aos="fade-up" data-aos-delay="300">
                             <p class="reviewProduct__rating-number">4.95</p>
                             <div class="reviewProduct__rating-stars">
                                 <div class="reviewProduct__rating-count">
@@ -740,9 +1078,9 @@
         <section class="advantages">
             <div class="container">
                 <div class="advantages__inner">
-                    <h2 class="advantages__title title-2">Переваги нашої продукції</h2>
+                    <h2 class="advantages__title title-2" data-aos="fade-up" data-aos-delay="0">Переваги нашої продукції</h2>
                     <div class="advantages__block">
-                        <div class="advantages__item">
+                        <div class="advantages__item" data-aos="fade-up" data-aos-delay="100">
                             <div class="advantages__item-top">
                                 <div class="advantages__item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 32" fill="none">
@@ -763,7 +1101,7 @@
                             </div>
                             <p class="advantages__item-descr">Ми пропонуємо гарантію, яка підтверджує довіру до наших продуктів – ретельне тестування кожного пристрою гарантує бездоганну роботу протягом тривалого періоду.</p>
                         </div>
-                        <div class="advantages__item">
+                        <div class="advantages__item" data-aos="fade-up" data-aos-delay="200">
                             <div class="advantages__item-top">
                                 <div class="advantages__item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="34" viewBox="0 0 32 34" fill="none">
@@ -786,7 +1124,7 @@
                             </div>
                             <p class="advantages__item-descr">Кожен масажер створений із використанням кращих компонентів та передових технологій, адже ми роками досліджували ринок та відбирали моделі, які самі використовуємо.</p>
                         </div>
-                        <div class="advantages__item">
+                        <div class="advantages__item" data-aos="fade-up" data-aos-delay="300">
                             <div class="advantages__item-top">
                                 <div class="advantages__item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="32" viewBox="0 0 34 32" fill="none">
@@ -808,7 +1146,7 @@
                             </div>
                             <p class="advantages__item-descr">Ретельно підібрані рішення для максимального комфорту і безпеки, що забезпечують ефективний масаж та полегшення м'язової напруги.</p>
                         </div>
-                        <div class="advantages__item">
+                        <div class="advantages__item" data-aos="fade-up" data-aos-delay="400">
                             <div class="advantages__item-top">
                                 <div class="advantages__item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -835,8 +1173,8 @@
         <section class="productSlider">
             <div class="container">
                 <div class="productSlider__inner">
-                    <h2 class="productSlider__title">Товари, які ви переглянули</h2>
-                    <div class="productSlider__content">
+                    <h2 class="productSlider__title" data-aos="fade-up" data-aos-delay="0">Товари, які ви переглянули</h2>
+                    <div class="productSlider__content" data-aos="fade-up" data-aos-delay="100">
                         <button class="productSlider__prev btn-prev"></button>
                         <div class="productSlider__slider">
                             <div class="swiper-wrapper">
@@ -960,8 +1298,8 @@
         <section class="faq">
             <div class="container">
                 <div class="faq__inner">
-                    <h2 class="faq__title title-2">Найчастіші питання та відповіді</h2>
-                    <div class="faq__block">
+                    <h2 class="faq__title title-2" data-aos="fade-up" data-aos-delay="0">Найчастіші питання та відповіді</h2>
+                    <div class="faq__block" data-aos="fade-up" data-aos-delay="100">
                         <div class="faq__item">
                             <h3 class="faq__item-title">Чи підходять масажери для людей з проблемами хребта?</h3>
                             <div class="faq__item-block">
@@ -999,7 +1337,7 @@
 
         <section class="messageBlock">
             <div class="container">
-                <div class="messageBlock__inner">
+                <div class="messageBlock__inner" data-aos="fade-up" data-aos-delay="0">
                     <div class="messageBlock__box">
                         <h3 class="messageBlock__title">Масажери на будь який смак</h3>
                         <p class="messageBlock__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula, justo id maximus hendrerit, massa risus malesuada dolor, eget aliquam massa lacus sit amet diam. Morbi imperdiet sodales diam, at tincidunt risus dictum id. Nunc egestas, purus facilisis condimentum placerat, mi ipsum eleifend sapien, nec lobortis quam est at leo. Mauris ut felis nec ipsum aliquet lobortis at sit amet lorem. Pellentesque elementum condimentum purus quis consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim diam nec blandit pretium. Vivamus aliquet luctus iaculis. Nullam sollicitudin est at tellus tempus, semper euismod mauris lobortis. Nulla accumsan mattis eros, eget volutpat tortor blandit a. Maecenas vulputate suscipit diam, a bibendum urna gravida pellentesque. Suspendisse gravida tellus vitae odio dictum, nec convallis massa posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula, justo id maximus hendrerit, massa risus malesuada dolor, eget aliquam massa lacus sit amet diam. Morbi imperdiet sodales diam, at tincidunt risus dictum id. Nunc egestas, purus facilisis condimentum placerat, mi ipsum eleifend sapien, nec lobortis quam est at leo. Mauris ut felis nec ipsum aliquet lobortis at sit amet lorem. Pellentesque elementum condimentum purus quis consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim diam nec blandit pretium. Vivamus aliquet luctus iaculis. Nullam sollicitudin est at tellus tempus, semper euismod mauris lobortis. Nulla accumsan mattis eros, eget volutpat tortor blandit a. Maecenas vulputate suscipit diam, a bibendum urna gravida pellentesque. Suspendisse gravida tellus vitae odio dictum, nec convallis massa posuere....</p>        
@@ -1287,6 +1625,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/product.js"></script>
