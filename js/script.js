@@ -276,5 +276,33 @@ document.addEventListener('DOMContentLoaded', () => {
               });
           });
       }
+
+      if (window.innerWidth < 768) {
+        const categoriesBoxItems = document.querySelectorAll('.categories__box');
+        gsap.set(categoriesBoxItems, { opacity: 0, y: 50 });
+        ScrollTrigger.batch(categoriesBoxItems, {
+            start: "top 80%",
+            onEnter: batch => {
+            gsap.to(batch, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.2,
+                duration: 0.8,
+                ease: "power3.out",
+                overwrite: true
+            });
+            },
+            once: true
+        });
+      }
     }
+});
+
+resizeHeight()
+function resizeHeight(){
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+window.addEventListener('resize', () => {
+  resizeHeight()
 });

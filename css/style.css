@@ -656,7 +656,7 @@ h4{
     top: 60px;
     left: 0;
     right: 0;
-    max-height: calc(100vh - 200px);
+    max-height: calc(var(--vh, 1vh) * 100 - 200px);
     overflow: auto;
     padding: 54px 54px 112px;
     overscroll-behavior: contain;
@@ -1015,7 +1015,7 @@ h4{
     }
     .header__content-inner{
         top: 0px;
-        max-height: calc(100vh - 100px);
+        max-height: calc(var(--vh, 1vh) * 100 - 100px);
     }
     .header__content-container{
         padding: 30px 20px;
@@ -1205,7 +1205,7 @@ h4{
     }
     .hero__slide {
         min-height: 670px;
-        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         max-height: 900px;
         padding: 180px 0 100px;
     }
@@ -1260,11 +1260,13 @@ h4{
 }
 .categories__box{
     padding: 35px 0;
-    border-top: 1px solid #252B30;
     overflow: hidden;
     position: relative;
     z-index: 1;
     background-color: #0C1318;
+}
+.categories__box:not(:first-of-type){
+    border-top: 1px solid #252B30;
 }
 .categories__box:last-of-type{
     border-bottom: 1px solid #252B30;
