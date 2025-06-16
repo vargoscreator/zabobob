@@ -4506,6 +4506,7 @@ ol.messageBlock__list li::before {
 }
 .product__slider{
     overflow: hidden;
+    border-radius: 30px;
 }
 .product__left{
     width: 100%;
@@ -4544,6 +4545,8 @@ ol.messageBlock__list li::before {
 }
 .product__slider-thumbnail{
     margin-top: 12px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 .product__slider-thumbnail .product__slide{
     width: 85px;
@@ -4790,6 +4793,9 @@ ol.messageBlock__list li::before {
     .product__buy{
         flex-direction: column;
     }
+    .product__slider-thumbnail{
+        border-radius: 5px;
+    }
     .product__slider-thumbnail .product__slide {
         width: 65px;
         min-width: 65px;
@@ -4809,6 +4815,9 @@ ol.messageBlock__list li::before {
     }
     .product__also-content{
         max-width: 100%;
+    }
+    .product__slider{
+        border-radius: 15px;
     }
 }
 /* whywe */
